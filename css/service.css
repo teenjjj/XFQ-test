@@ -134,6 +134,10 @@ header ul li a:hover {
 #container #pics .pic img {
   box-shadow: 10px 10px 10px #686767;
 }
+#container #pics .pic p {
+  text-decoration: none;
+  color: #686767;
+}
 
 #xfq1 {
   height: 60vh;
