@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ebebe8;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#back{
+    z-index: 999;
+    position: fixed;
+    margin: 20px;
+    display:flex;
+    color:#9c886e;
+    span{
+       font-size: 50px; 
+       
+       &:hover{
+        color:#686767;
+    }
+    }
+    p{
+        margin-top: 9px;
+        margin-left: 3px;
+        font-size: 20px;
+        // color:#9c886e;
+    }
+    
+}
+
+.wrap{
+    top: 0;
+    .jumbotron{
+        position: relative;
+        // margin-right: 300px;
+        height: 650px;
+     
+    }
+}
+
+// 房屋細節
+.name{
+    margin-top: 5%;
+    font-size: 20px;
+    color: #3b3b3b;
+    text-align: center;
+}
+
+#detail{
+    display: flex;
+    margin-top: 5%;
+    height: max-content;
+    text-align: center;
+    justify-content: center;
+    table{
+        border-collapse: collapse;
+        tr{
+            border-bottom: 1px solid #949292;
+        td{
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 18px;
+            padding: 20px;
+            &:first-child{
+                font-weight: 600;
+                color: #3b3b3b;
+                padding: 10px;
+            }
+            &:last-child{
+                font-weight: 500;
+                padding: 10px;
+                color: #686767;
+
+            }
+    }
+    
+        }
+    }
+}
+
+.first{
+    margin-top: 10vh;
+    height: 650px;
+    margin-bottom: 20vh;
+}
+
+
+// gllery
+.horizontal-section{
+    padding: 100px 0;
+    background-color: #9c886e;
+}
+.sticky-wrapper{
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 100px;
+}
+.element-wrapper{
+    position: relative;
+    display: flex;
+}
+.element{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+    img{
+        height: 400px;
+    }
+}
+
+#welcome{
+    font-size: 4rem;
+    color: #ebebe8;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+#spas{
+    display: flex;
+    justify-content: center;
+    margin-top: 225px;
+    #spa{
+    font-size: 3rem;
+    color: #ebebe8;
+}
+}
+
+// #flower{ 
+//     height:15rem;
+//     margin-top: 4rem;
+//     margin-left: 4rem;
+// }
+// #photo{
+   
+//     .second{
+//         height: 1080px;
+//     }
+//     .third{
+//         height: 900px;
+//     }
+// }
+
+//footer
+footer{
+    position:relative;
+    height:max-content;
+    margin-top: 80px;
+}
+footer p{
+    width:100%;
+    font-size: 15px;
+    text-align: center;
+    color:rgb(148, 147, 147);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+// loading
+#loader-wrapper{
+    z-index: 1000;
+    width: 100%;
+    height:100%;
+    top: 0%;
+    left: 0%;
+    overflow-y: hidden;
+    position: absolute;
+    background-color: #9c886e;
+}
+
+.load{
+    position: absolute;
+    top: 15%;
+    transform: scale(1) rotate(0deg);
+    animation: circle 10s linear infinite .3s;
+}
+
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+

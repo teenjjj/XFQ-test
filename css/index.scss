@@ -1,0 +1,295 @@
+body{
+    background-color: #ebebe8;
+    width:100vh;
+    height:auto;
+    scroll-behavior: smooth;
+}
+// Navbar 
+header{
+    position:fixed;
+    z-index:99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    .sticky{
+        padding: 5px 100px;
+        background: #686767;
+
+    }
+   
+    .backhome{
+        position: relative;
+        img{
+            height:50px;
+        }
+
+    }
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            position: relative;
+            list-style: none;
+
+            a{                
+                margin: 0 15px;
+                text-decoration: none;
+                color: #fff;
+                letter-spacing: 3px;
+                position: relative;
+                transition: 0.6s;
+                
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 100%;
+                    height: 1px;
+                    background: #fff;
+                    transform: scale(0);
+                    transition: .3s;            
+                }
+                &:hover:before{
+                    transform: scaleX(1);
+                }
+
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+header.sticky {
+    padding: 10px 100px;
+    background: #ebebe8;
+    ul li a{
+        color: #686767;
+        position: relative;
+        top:7px;
+        transition: 0.6s;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 1px;
+            background: #686767;
+            transform: scale(0);
+            transition: .3s;            
+        }
+        &:hover:before{
+            transform: scaleX(1);
+        }
+
+        &:hover{
+            color: #686767;
+        }
+    }
+  }
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+// navbar end
+
+// 全部的
+#container{
+    position:absolute;
+    top:0;
+    width:100%;
+    // height:100vh; 這邊很重要<<<要修復
+}
+
+// 一進來的標題
+
+#title{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    place-content:center;
+    position: absolute;     /*絕對位置*/
+    left: 50%; 
+    top: 50%;             /*從左邊開始算，右推 50% (一半) 的位置*/
+    margin-top: -200px;     /*高度的一半*/
+    margin-left: -100px; 
+   
+}
+.content{
+    p{
+        text-align: center;
+        font-size:20px;
+        // font-family: 'Noto Sans TC', sans-serif;
+        font-weight: bold;
+        color:	#686767;
+        margin-top: 40px;
+    }
+    .text-reveal{
+        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+        transition: all 1.5s;
+        // transform:translateY(-3em);
+    }
+ }
+#logo{
+    img {
+        height:100px;
+    }
+}
+
+// 進來大廳長相
+// #center{
+//     min-height: calc(100% - 100px); 
+// }
+#backpic{
+    .carousel-item{
+        height:970px;
+        img{
+            min-height: 970px;
+            object-fit: cover;
+            filter:brightness(.65);
+            // vertical-align: supper;
+        }
+    }
+}
+
+// .carousel-control-prev .carousel-control-next{
+
+// }
+
+#center_title{
+    position:absolute;
+    height:400px;
+    width: 380px;
+    place-content:center; 
+    display:grid;
+    top:50%;
+    left:50%;
+    margin-top: -320px;
+    margin-left: -190px;
+    z-index: 9999;
+    span{
+        width:45px;
+        text-align: center;
+        font-size:45px;
+        margin-top: 40px;
+        margin-left: 45%;
+        color:#ebebe8;
+        cursor: pointer;
+    }
+   
+
+}
+#logo2{
+    img {
+        height:130px;
+        filter: contrast(250%);
+        
+    }
+}
+
+.content1{
+    p{
+        margin-top: 40px;
+        color:#ebebe8;
+        text-align: center;
+        font-size:20px;
+        font-family: "微軟正黑體";
+        font-weight: bold;
+
+        
+    }
+}
+
+#pointer{
+    margin-top: 20px;
+    p{
+        text-align: center;
+        margin-left: 10px;
+        color:#ebebe8;
+    }
+}
+
+// About us
+
+#About{
+    height:400px;
+    width:70%;
+    position:absolute;
+    left:20%;
+    margin-top: 44px;
+    justify-content: center;
+    align-items: center;
+   #about_title{
+        width:max-content;
+        position:relative;
+        margin:50px;
+        left:-100px;
+        p{
+            font-family: 'Playfair Display', serif;
+            font-size:34px;
+            color:#9c886e;
+        }
+    }
+    #about_content{
+        margin-top: 10px;
+        width:100%;
+        height:auto;
+        position:relative;
+        display: space-between;
+        #about_text{
+            width: 33vw;
+            position:relative;
+            float: left;
+            margin-top: 40px;
+            p{
+                line-height: 30px;
+                word-spacing: 6px;
+                letter-spacing: 3px;
+                color:#686767;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+        }
+        #about_pic{
+            border:1px solid #686767;
+            padding: 5px;
+            position:relative;
+            margin-top: 45px;
+            width:fit-content;
+            float:right;
+           img{
+            height:300px;
+            width:fit-content;
+            float:right;
+           }
+        }   
+    }
+}
+
+footer{
+    position:relative;
+    height:100px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    bottom: -650px;
+}
+footer p{
+    width:100%;
+    font-size: 15px;
+    text-align: center;
+    color:rgb(148, 147, 147);
+}
+    
+    
+

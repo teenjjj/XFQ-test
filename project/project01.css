@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ebebe8;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#back {
+  z-index: 999;
+  position: fixed;
+  margin: 20px;
+  display: flex;
+  color: #9c886e;
+}
+#back span {
+  font-size: 50px;
+}
+#back span:hover {
+  color: #686767;
+}
+#back p {
+  margin-top: 9px;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.wrap {
+  top: 0;
+}
+.wrap .jumbotron {
+  position: relative;
+  height: 650px;
+}
+
+.name {
+  margin-top: 5%;
+  font-size: 20px;
+  color: #3b3b3b;
+  text-align: center;
+}
+
+#detail {
+  display: flex;
+  margin-top: 5%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  justify-content: center;
+}
+#detail table {
+  border-collapse: collapse;
+}
+#detail table tr {
+  border-bottom: 1px solid #949292;
+}
+#detail table tr td {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  padding: 20px;
+}
+#detail table tr td:first-child {
+  font-weight: 600;
+  color: #3b3b3b;
+  padding: 10px;
+}
+#detail table tr td:last-child {
+  font-weight: 500;
+  padding: 10px;
+  color: #686767;
+}
+
+.first {
+  margin-top: 10vh;
+  height: 650px;
+  margin-bottom: 20vh;
+}
+
+.horizontal-section {
+  padding: 100px 0;
+  background-color: #9c886e;
+}
+
+.sticky-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+.element-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.element {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+}
+.element img {
+  height: 400px;
+}
+
+#welcome {
+  font-size: 4rem;
+  color: #ebebe8;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#spas {
+  display: flex;
+  justify-content: center;
+  margin-top: 225px;
+}
+#spas #spa {
+  font-size: 3rem;
+  color: #ebebe8;
+}
+
+footer {
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 80px;
+}
+
+footer p {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(148, 147, 147);
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#loader-wrapper {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  overflow-y: hidden;
+  position: absolute;
+  background-color: #9c886e;
+}
+
+.load {
+  position: absolute;
+  top: 15%;
+  transform: scale(1) rotate(0deg);
+  -webkit-animation: circle 10s linear infinite 0.3s;
+          animation: circle 10s linear infinite 0.3s;
+}
+
+@-webkit-keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=project01.css.map */

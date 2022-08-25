@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #ebebe8;
+  overflow-x: hidden;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  z-index: 99999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 100px;
+  background: #ebebe8;
+  border-bottom: 1px solid #A1A1A1;
+}
+header .backhome {
+  position: relative;
+}
+header .backhome img {
+  height: 50px;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #686767;
+  letter-spacing: 3px;
+  position: relative;
+  transition: 0.5s;
+  top: 7px;
+}
+header ul li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #686767;
+  transform: scale(0);
+  transition: 0.3s;
+}
+header ul li a:hover:before {
+  transform: scaleX(1);
+}
+header ul li a:hover {
+  color: #686767;
+}
+
+.menu {
+  margin-top: 0.5%;
+}
+
+.content {
+  padding: 0 0 80px;
+}
+
+.swiper {
+  width: calc(100% - 200px);
+  padding: 80px 0 0;
+  min-height: 635px;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+.swiper-slide img {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 200px 200px 0 0;
+  transition: 0.5s;
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+}
+.swiper-slide img:hover {
+  transform: scale(1.15);
+}
+.swiper-slide .slide-text {
+  text-align: center;
+  padding: 20px;
+  transition: all ease 0.5s;
+}
+.swiper-slide .slide-text h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.swiper-slide .slide-text p {
+  color: #686767;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all ease 0.5s;
+}
+
+.swiper-slide:hover .slide-text {
+  transform: translateY(-110px);
+  color: #fff;
+}
+.swiper-slide:hover .slide-text p {
+  color: #fff;
+}
+
+.typo {
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  transform: scale(0);
+  transition: all ease 0.3s;
+}
+.typo img {
+  height: 100px;
+}
+
+.swiper-slide:hover .typo {
+  transform: scale(1) rotate(0deg);
+  -webkit-animation: circle 10s linear infinite 0.3s;
+          animation: circle 10s linear infinite 0.3s;
+  transform-origin: center;
+}
+
+@-webkit-keyframes circle {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.swiper-button-prev, .swiper-button-next {
+  color: #686767;
+  width: 100px;
+  height: 100px;
+  line-height: 110px;
+  border: 2px solid rgba(104, 103, 103, 0.2);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  transition: all ease 0.5s;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 30px;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: #9c886e;
+  color: #ebebe8;
+}
+
+.swiper-button-next {
+  right: -40px;
+  padding-right: 20px;
+}
+
+.swiper-button-prev {
+  left: -40px;
+  padding-left: 20px;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #9c886e;
+}
+
+.swiper-container-horizontal > .swiper-scrollbar {
+  left: 0;
+  height: 8px;
+}
+
+#loader-wrapper {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  overflow-y: hidden;
+  position: absolute;
+  background-color: #9c886e;
+}
+
+.load {
+  position: absolute;
+  top: 15%;
+  transform: scale(1) rotate(0deg);
+  -webkit-animation: circle 10s linear infinite 0.3s;
+          animation: circle 10s linear infinite 0.3s;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.load2 {
+  position: absolute;
+  right: -3%;
+  top: 54%;
+  transform: scale(1) rotate(0deg);
+  -webkit-animation: circle2 10s linear infinite 0.3s;
+          animation: circle2 10s linear infinite 0.3s;
+}
+.load2 img {
+  height: 43rem;
+}
+
+@-webkit-keyframes circle2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes circle2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+footer {
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 80px;
+}
+
+footer p {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(148, 147, 147);
+  font-family: "Noto Sans TC", sans-serif;
+}/*# sourceMappingURL=works.css.map */

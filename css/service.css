@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #ebebe8;
+  overflow-x: hidden;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  top: 0;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 100px;
+  background: #ebebe8;
+  border-bottom: 1px solid #A1A1A1;
+}
+header .backhome {
+  position: relative;
+}
+header .backhome img {
+  height: 50px;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #686767;
+  letter-spacing: 3px;
+  position: relative;
+  transition: 0.5s;
+  top: 7px;
+}
+header ul li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #686767;
+  transform: scale(0);
+  transition: 0.3s;
+}
+header ul li a:hover:before {
+  transform: scaleX(1);
+}
+header ul li a:hover {
+  color: #686767;
+}
+
+.menu {
+  margin-top: 0.5%;
+}
+
+#container {
+  width: 100%;
+}
+#container #title {
+  margin-top: 7%;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #9c886e;
+  letter-spacing: 5px;
+}
+#container #title h1 {
+  font-weight: 0;
+  font-family: "Noto Serif TC", serif;
+}
+#container #title span {
+  font-family: "Noto Serif TC", serif;
+}
+#container #service {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+#container #service .ser {
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px;
+  color: #686767;
+  border-bottom: 2px solid #9c886e;
+  cursor: pointer;
+}
+#container #service .ser span {
+  font-size: 2.3rem;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+#container #service .ser h2 {
+  float: right;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+#container #service .ser:hover span {
+  font-size: 3rem;
+}
+#container #pics {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#container #pics .pic {
+  margin-bottom: 3vh;
+  text-align: center;
+}
+#container #pics .pic img {
+  box-shadow: 10px 10px 10px #686767;
+}
+
+#xfq1 {
+  height: 60vh;
+  position: relative;
+  left: 15%;
+  float: left;
+  bottom: 240vh;
+}
+
+#loader-wrapper {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: absolute;
+  background-color: #9c886e;
+}
+
+.load {
+  position: absolute;
+  top: 15%;
+  transform: scale(1) rotate(0deg);
+  -webkit-animation: circle 10s linear infinite 0.3s;
+          animation: circle 10s linear infinite 0.3s;
+}
+
+@-webkit-keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.load2 {
+  position: absolute;
+  right: -3%;
+  top: 54%;
+  transform: scale(1) rotate(0deg);
+  -webkit-animation: circle2 10s linear infinite 0.3s;
+          animation: circle2 10s linear infinite 0.3s;
+}
+.load2 img {
+  height: 43rem;
+}
+
+@-webkit-keyframes circle2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes circle2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+footer {
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 80px;
+}
+
+footer p {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(148, 147, 147);
+  font-family: "Noto Sans TC", sans-serif;
+}/*# sourceMappingURL=service.css.map */

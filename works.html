@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- googlee font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <!-- mine -->
+    <link href="css/works.css" rel="stylesheet">
+    <script src="js/navbar.js"></script>
+    <title>XFQ Works</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="logo"><a href="index.html" class="backhome"><img src="pic/興富謙logo.png"></a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">關於興富謙</a></li>
+                <li><a href="#" style="border-bottom:2px solid #686767;">興富謙作品</a></li>
+                <li><a href="persistence.html">興富謙堅持</a></li>
+                <li><a href="perspective.html">興富謙觀點</a></li>
+                <li><a href="future.html">興富謙未來</a></li>
+                <li><a href="service.html">興富謙服務</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- navbar 結束 -->
+
+    <div class="content">
+        <div class="banner">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="project/project01.html"><img src="pic/slide無界.jpg" alt=""></a>
+                        <div class="slide-text">
+                            <h3>無界</h3>
+                            <p>2010 台北市中正區</p>
+                        </div>
+                        <div class="typo"><img src="pic/watch_more.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="project/project02.html"><img src="pic/slide京手作.jpg" alt=""></a>
+                        <div class="slide-text">
+                            <h3>京手作</h3>
+                            <p>2011 台北市中山區</p>
+                        </div>
+                        <div class="typo"><img src="pic/watch_more.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="project/project03.html"><img src="pic/slide任所適.jpg" alt=""></a>
+                        <div class="slide-text">
+                            <h3>任所適</h3>
+                            <p>2012 台北市中正區</p>
+                        </div>
+                        <div class="typo"><img src="pic/watch_more.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="project/project04.html"><img src="pic/slide寬心.jpg" alt=""></a>
+                        <div class="slide-text">
+                            <h3>寬心富謙</h3>
+                            <p>2013 台北市中正區</p>
+                        </div>
+                        <div class="typo"><img src="pic/watch_more.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="project/project05.html"><img src="pic/slideA.jpg" alt=""></a>
+                        <div class="slide-text">
+                            <h3>快客A+</h3>
+                            <p>2014 台北市中正區</p>
+                        </div>
+                        <div class="typo"><img src="pic/watch_more.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="project/project06.html"><img src="pic/slide學知堂.jpg" alt=""></a>
+                        <div class="slide-text">
+                            <h3>學知堂</h3>
+                            <p>2015 台北市大安區</p>
+                        </div>
+                        <div class="typo"><img src="pic/watch_more.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="project/project07.html"><img src="pic/slide靜吾間.jpg" alt=""></a>
+                        <div class="slide-text">
+                            <h3>謙邸</h3>
+                            <p>2016 台北市中正區</p>
+                        </div>
+                        <div class="typo"><img src="pic/watch_more.png" alt=""></div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!-- loading animation -->
+    <div id="loader-wrapper">
+        <div class="load">
+            <img src="pic/loader.png" alt="">
+        </div>
+        <div class="load2">
+            <img src="pic/loader.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 興富謙. All rights reserved.</p>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 4,
+            slidesPerGroup: 2,
+            spaceBetween: 20,
+            speed: 2000,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <!-- loading script -->
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $("#loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+
+</body>
+
+</html>
