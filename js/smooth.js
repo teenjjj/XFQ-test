@@ -1,5 +1,5 @@
 
-// 還沒理解的滑動效果
+// 滑動效果
 document.addEventListener("DOMContentLoaded",function(){
     const body = document.body,
         scrollWrap = document.getElementsByClassName("smooth-scroll")[0],
