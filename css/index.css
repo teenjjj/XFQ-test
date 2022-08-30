@@ -213,7 +213,7 @@ header.sticky ul li a:hover {
 #About #about_content {
   margin-top: 10px;
   width: 100%;
-  height: auto;
+  height: 90vh;
   position: relative;
   display: space-between;
 }
@@ -250,10 +250,11 @@ header.sticky ul li a:hover {
 
 footer {
   position: relative;
-  height: 100px;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  bottom: -650px;
+  width: 100vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  bottom: -40%;
 }
 
 footer p {
@@ -261,4 +262,5 @@ footer p {
   font-size: 15px;
   text-align: center;
   color: rgb(148, 147, 147);
+  font-family: "Noto Sans TC", sans-serif;
 }/*# sourceMappingURL=index.css.map */
