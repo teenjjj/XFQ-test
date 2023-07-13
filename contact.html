@@ -16,32 +16,21 @@
 
 <body>
     <!-- navbar -->
-    <header>
-        <div class="logo"><a href="index.html" class="backhome"><img src="pic/興富謙logo.png"></a></div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">關於興富謙</a></li>
-                <li><a href="works.html">興富謙作品</a></li>
-                <li><a href="persistence.html">興富謙堅持</a></li>
-                <li><a href="perspective.html">興富謙觀點</a></li>
-                <li><a href="future.html">興富謙未來</a></li>
-                <li><a href="service.html">興富謙服務</a></li>
-                <li><a href="#" style="border-bottom:2px solid #686767;">聯絡我們</a></li>
-            </ul>
-        </div>
+    <div class="navbar">
 
-    </header>
+    </div> 
     <!-- navbar 結束 -->
 
     <div id="container">
-        <div class="display">
-            <div id="place">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.754091806177!2d121.52946551537889!3d25.042418044107045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97c8145ba85%3A0x7e01ba7b721629b5!2z6IiI5a-M6KyZ5bu66Kit6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1658205267864!5m2!1szh-TW!2stw"
-                    width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="adjust">
+                <div id="place">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.754091806177!2d121.52946551537889!3d25.042418044107045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97c8145ba85%3A0x7e01ba7b721629b5!2z6IiI5a-M6KyZ5bu66Kit6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1658205267864!5m2!1szh-TW!2stw"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-
+            
             <div class="word">
                 <div id="information">
                     <div id="one">
@@ -59,11 +48,11 @@
                     <img src="pic/undraw_social_thinking_re_y8cc.svg" style="height:120px">
                 </div>
             </div>
-
-        </div>
     </div>
     <!-- container end -->
-
+    <footer>
+        <p>Copyright © 興富謙. All rights reserved.</p>
+    </footer>
     
     <!-- loading animation -->
     <div id="loader-wrapper">
@@ -75,9 +64,7 @@
         </div>
     </div>
     
-    <footer>
-        <p>Copyright © 興富謙. All rights reserved.</p>
-    </footer>
+
 
     <!-- loading script -->
     <script src="jquery-3.6.0.js"></script>
@@ -86,6 +73,7 @@
             $("#loader-wrapper").fadeOut("slow");
         });
     </script>
+    <script src="./js/navRWD.js"></script>
 </body>
 
 </html>
