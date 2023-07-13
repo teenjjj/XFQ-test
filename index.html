@@ -15,9 +15,11 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
     <!-- mine -->
     <script src="js/animate.js"></script>
-    <script src="js/smooth.js"></script>
+    <!-- <script src="js/smooth.js"></script> -->
     <script src="js/navbar.js"></script>
     <link href="css/index.css" rel="stylesheet">
     <title>XFQ</title>
@@ -28,6 +30,9 @@
   <header>
     <a href="index.html" class="backhome"><img src="pic/興富謙logo.png"></a>
     <ul>
+      <div class="icon cancel-btn">
+        <i class="fas fa-times"> </i>
+      </div>
       <li><a href="#About">關於興富謙</a></li>
       <li><a href="works.html">興富謙作品</a></li>
       <li><a href="persistence.html">興富謙堅持</a></li> 
@@ -36,21 +41,24 @@
       <li><a href="service.html">興富謙服務</a></li>           
       <li><a href="contact.html">聯絡我們</a></li>
     </ul>
+    <div class="icon menu-btn">
+      <i class="fas fa-bars"> </i>
+    </div>
   </header>
   <section class="banner"></section>
 
   <!-- navbar 結束 -->
   
 
-    <div id="container" class="smooth-scroll">
+    <div id="container">
         <!-- 一進去的logo -->
-          <div id="title">
-              <div class="content">
-                  <div id="logo" ><img src="pic/興富謙logo.png"></div>
+          <div id="title" >
+              <div class="content" >
+                  <div id="logo"><img src="pic/興富謙logo.png"></div>
                   <p class="text-reveal">謹慎而謙卑得構築美學</p>
               </div>
           </div>
-       
+
         <!-- 大廳 -->
         <div id="center" class="popup">
             <div id="backpic">
@@ -98,12 +106,12 @@
         
 
           <!-- about 興富謙 -->
-          <section id="About" class="popup">
+          <div id="About" class="popup">
             <div id="about_title">
               <p>About us</p>
             </div>
 
-            <div id="about_content" data-aos="fade-up" style="transition-duration: 1.5s;">
+            <div id="about_content" data-aos="fade-up">
               <div>
                 <div id="about_text">
                   <p >「興富謙建設」從工務起家，更著重實事求是的態度<br>逾30多年經驗，穩紮穩打、事必躬親的精神，是本於熱愛建築的執著。<br><br>2004年成立興富晟建設，2009年以「興富謙建設」奠定實績口碑。<br>追求的，不是成本省了多少，是細節講究了多少。<br><br>「興富謙建設」深諳，成就好建築的關鍵是細節，而專注細節的養成，在於匠心。親自參與每棟建築規劃，注重客戶在空間與尺度的需求重視，以自居者的角度不斷進行好幾次的沙盤推演才定案，而這樣用心的態度也得到購屋者的信賴與回饋，有許多的已購客都是客戶口碑推薦而來，更確定蓋好建築的初心。</p>
@@ -114,20 +122,39 @@
                 </div>
               
             </div>
-              
-          </section>
+
+          </div>
+
+            <footer class="popup">
+              <p>Copyright © 興富謙. All rights reserved.</p>
+            </footer> 
 
         </div>
-
-                 
+        
     </div> <!--CONTAINER-->
     
-        <footer>
-            <p>Copyright © 興富謙. All rights reserved.</p>
-        </footer>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const ul = document.querySelector("ul");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      const body = document.querySelector("body");
+
+      menuBtn.onclick = () =>{
+        ul.classList.add("active");
+        menuBtn.classList.add("hide");
+        body.classList.add("disableScroll");
+      }
+
+      cancelBtn.onclick = () =>{
+        ul.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        body.classList.remove("disableScroll");
+      }
+
     </script>
     
 </body>
